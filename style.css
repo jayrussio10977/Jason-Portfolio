@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 10px solid darkblue;
+  background-color: lightblue;
+  margin: 5px 5px;
+  padding: 5px 5px;
+
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+ul li {
+  display: inline-flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid orange;
+  margin: 5px auto;
+  padding: 2px;
+}
+
+section {
+  height: 400px;
+  width: 80%;
+  margin: 30px auto;
+  border: 10px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects2 {
+  position: relative;
+  left: 200px;
+}
+
+#contact2 {
+  position: relative;
+}
+
+#absolute-box {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+#fixed-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* .img{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  align-items: center;
+  max-width: 300px;
+  } */
+
+  .aboutimg{
+    width: 50%;
+    height: auto;
+    max-height: 300px;
+
+  }
+  .contactimg{
+    width: 50%;
+    height: auto;
+    max-height: 300px;
+
+  }
+  .projectimage{
+    width: 50%;
+    height: auto;
+    
+    
+
+  }
+
+  #email{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* #projectimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 300px; */
+
+  
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 768px)
+  {
+  
+    }
+
+    @media screen and (max-width 480px)
+{
+
+}
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  img {
+   
+  }
