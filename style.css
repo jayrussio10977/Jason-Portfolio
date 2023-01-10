@@ -1,8 +1,10 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+   margin: 0;
   padding: 0;
+  background-color: skyblue;
 }
+
+
 
 h1,
 h2,
@@ -27,6 +29,7 @@ nav{
   justify-content:center;
   align-items: center;
 }
+
 
 ul li {
   display: inline-flex;
@@ -55,7 +58,7 @@ section {
 }
 
 #absolute-box {
-  position: absolute;
+  position: relative;
   top: 50px;
   right: 100px;
 }
@@ -66,66 +69,98 @@ section {
   right: 0;
 }
 
-/* .img{
+.aboutimg{
   display: flex;
-  justify-content: center;
-  width: 300px;
+  width: 200px;
   height: auto;
-  align-items: center;
-  max-width: 300px;
-  } */
-
-  .aboutimg{
-    width: 50%;
-    height: auto;
-    max-height: 300px;
-
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 10px solid darkblue;
+  background-color: lightblue;
+  margin: 5px 5px;
+  padding: 5px 5px;
   }
+
   .contactimg{
-    width: 50%;
-    height: auto;
-    max-height: 300px;
-
-  }
-  .projectimage{
-    width: 50%;
-    height: auto;
-    
-    
-
-  }
-
-  #email{
     display: flex;
-    justify-content: center;
-  }
-
-  /* #projectimage{
-    display: flex;
+    width: 200px;
+    height: auto;
     flex-direction: column;
-    justify-content: center;
-    max-height: 300px; */
-
-  
-  footer{
-    display: flex;
-    justify-content: center;
-  }
-  @media screen and (max-width: 768px)
-  {
-  
+    justify-content: flex-start;
+    border: 10px solid darkblue;
+    background-color: lightblue;
+    margin: 5px 5px;
+    padding: 5px 5px;
     }
 
-    @media screen and (max-width 480px)
-{
+    .projectimage{
+      height: auto;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      border: 10px solid darkblue;
+      margin: 5px 5px;
+      padding:5px 5px;
+      }
+ 
+   #email{
+    display: flex;
+    justify-content: center;
+  }
 
-}
+  footer { 
+    display: flex;
+    justify-content: center;
+  }
 
   div {
     display: flex;
     justify-content: center;
+
   }
+
+  @media screen and (max-width: 768px) {
+    .aboutimg{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border: 10px solid darkblue;
+      margin: 5px 5px;
+      padding: 5px 5px;
+      }
+
+      .contactimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 10px solid darkblue;
+    background-color: lightblue;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    }
+    
+    .projectimage{
+      height: auto;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      border: 10px solid darkblue;
+      margin: 5px 5px;
+      padding:5px 5px;
+      }
+    body {
+      background-color: lightgreen;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+
   
-  img {
-   
-  }
+  
